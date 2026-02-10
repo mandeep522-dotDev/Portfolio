@@ -1,106 +1,90 @@
-* {
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
 .resume {
-  width: 92%;
-  background: #fff;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 .header {
   display: flex;
-  padding: 40px;
-  background: linear-gradient(90deg, #2ec4c6, #8ea7ff);
-  color: white;
-  margin-top: -10px;
-  border-radius: 5px;
+  gap: 20px;
+  align-items: center;
 }
 
 .profile-pic img {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.header-text {
-  margin-left: 40px;
+/* CONTACT */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
 }
 
-.header-text h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-.header-text h2 {
-  margin: 5px 0 20px;
-  letter-spacing: 2px;
-}
-
-.summary {
-  max-width: 600px;
-}
-
-.contact span {
-  display: block;
-  margin-top: 5px;
-}
-
+/* CONTENT */
 .content {
   display: flex;
-  padding: 40px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.left, .right {
-  width: 50%;
-  padding: 20px;
+.left,
+.right {
+  flex: 1;
 }
 
-h3 {
-  background: linear-gradient(90deg, #2ec4c6, #8ea7ff);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  width: fit-content;
+@media (max-width: 768px) {
+  /* Header stack */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact {
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  /* Content stack */
+  .content {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
 }
 
-.title {
-  font-weight: bold;
-  font-size: 25px;
-  margin-top: 20px;
-  color: #01fbff;
-  font-family:'Times New Roman', Times, serif;
-}
+@media (max-width: 480px) {
+  .resume {
+    padding: 10px;
+  }
 
-.present {
-  color: #0077ff;
-  font: bold;
-}
+  .summary {
+    font-size: 14px;
+  }
 
-.content .left ul li {
-  margin-top: 10px;
-  color: #546c73;
-}
-
-.content .left .tools li {
-  color: #0c7cfb;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.about {
-  padding: 40px;
-  text-align: start;
-  margin-right: 100px;
-}
-
-.about h3 {
-  margin: auto;
-}
-
-.links a {
-  color: #fa4008;
-  text-decoration: none;
+  ul li {
+    font-size: 14px;
+  }
 }
