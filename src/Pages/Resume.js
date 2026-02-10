@@ -85,7 +85,7 @@ function Resume() {
         {/* ABOUT */}
         <div className="about">
           <h3>ABOUT</h3>
-          <p style={{color: "black", fontSize: "15px"}}>
+          <p style={{color: "white", fontSize: "15px"}}>
             A well passionate self-taught Web Developer who chose career to be a
             software engineer. Interested in coding and enthusiastic about
             learning latest technologies. Strong problem solving and analytical
@@ -94,7 +94,7 @@ function Resume() {
 
           <p className="links">
             <strong style={{color: "#01fbff", fontSize: "20px"}}>My Portfolio Website:</strong>{" "}
-            <a href="https://mandeepdev.com">mandeepdev.com</a>
+            <a href="hhttps://mandeepdev.netlify.app/">mandeepdev.com</a>
           </p>
 
           <p className="links">
