@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.resume {
+  width: 92%;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  padding: 40px;
+  background: linear-gradient(90deg, #2ec4c6, #8ea7ff);
+  color: white;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-text {
+  margin-left: 40px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.header-text h2 {
+  margin: 5px 0 20px;
+  letter-spacing: 2px;
+}
+
+.summary {
+  max-width: 600px;
+}
+
+.contact span {
+  display: block;
+  margin-top: 5px;
+}
+
+.content {
+  display: flex;
+  padding: 40px;
+}
+
+.left, .right {
+  width: 50%;
+  padding: 20px;
+}
+
+h3 {
+  background: linear-gradient(90deg, #2ec4c6, #8ea7ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 20px;
+  color: #01fbff;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.present {
+  color: #0077ff;
+  font: bold;
+}
+
+.content .left ul li {
+  margin-top: 10px;
+  color: #546c73;
+}
+
+.content .left .tools li {
+  color: #0c7cfb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about {
+  padding: 40px;
+  text-align: start;
+  margin-right: 100px;
+}
+
+.about h3 {
+  margin: auto;
+}
+
+.links a {
+  color: #fa4008;
+  text-decoration: none;
+}
